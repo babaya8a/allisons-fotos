@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Allisons Fotos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Allison's Fotos</h1>
+    <p>Capturing moments in their natural beauty</p>
+    <p>
+      <a href="https://www.instagram.com/allisons_fotos?igsh=MXJxODJ6NXpraDVmbw==" target="_blank" rel="noopener noreferrer" class="instagram-link">
+        CHECK ME OUT ON INSTA
+      </a>
+    </p>
+  </header>
+
+  <main>
+    <!-- Search and Filter Controls -->
+    <section class="filter-controls">
+      <input
+        type="search"
+        id="searchInput"
+        placeholder="Search photos by tags or filename..."
+        autocomplete="off"
+      />
+      <div class="filter-buttons">
+        <button data-filter="all" class="active">All</button>
+        <button data-filter="birds">Birds</button>
+        <button data-filter="wildlife">Wildlife</button>
+        <button data-filter="landscape">Landscape</button>
+      </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-grid" id="gallery">
+      <!-- Images injected from script.js -->
+    </section>
+  </main>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" style="display:none;">
+    <span id="close" style="cursor:pointer;">&times;</span>
+    <img id="lightbox-img" src="" alt="Expanded photo" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
